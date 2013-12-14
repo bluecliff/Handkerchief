@@ -389,6 +389,10 @@ public class PlayerListActivity extends Activity implements
 	}
 
 	private void displayResult() {
+		if(!onStarting){
+			return;
+		}
+		onStarting = false;
 		String winner = "";
 		String loser = "";
 		for (Player player : playerList) {
@@ -403,7 +407,6 @@ public class PlayerListActivity extends Activity implements
 			mPlayer.pause();
 			// mPlayer.prepareAsync();
 			// mPlayer.reset();
-
 		}
 		AlertDialog.Builder builder = new Builder(PlayerListActivity.this);
 		builder.setTitle("Result");

@@ -413,7 +413,8 @@ public class ServerListActivity extends Activity implements
 							displayResult();
 							return;
 						}
-						if(player.identity.equals(PlayerStatus.IDENTITY_RECEIVER)){
+						if (player.identity
+								.equals(PlayerStatus.IDENTITY_RECEIVER)) {
 							p.setBack();
 							position = playerList.indexOf(player);
 						}
@@ -476,7 +477,7 @@ public class ServerListActivity extends Activity implements
 	}
 
 	private void displayResult() {
-		if(!onStarting){
+		if (!onStarting) {
 			return;
 		}
 		onStarting = false;
@@ -493,7 +494,8 @@ public class ServerListActivity extends Activity implements
 
 		AlertDialog.Builder builder = new Builder(ServerListActivity.this);
 		builder.setTitle("Result");
-		builder.setMessage("Winner：" + winner + "\nLoser:" + loser+",大家一起惩罚ta吧~~");
+		builder.setMessage("Winner：" + winner + "\nLoser:" + loser
+				+ ",大家一起惩罚ta吧~~");
 		builder.setPositiveButton("再来一局", new OnClickListener() {
 
 			@Override
@@ -511,10 +513,10 @@ public class ServerListActivity extends Activity implements
 		this.onStarting = false;
 		client.onStartListener = false;
 		instance.init();
-		
+
 		SharedPreferences prefs = PreferenceManager
 				.getDefaultSharedPreferences(this);
-		
+
 		int imgId = Integer.parseInt(prefs.getString("playerImgId", "3"));
 		instance.setId(imgId);
 		client.sendMsg(new Gson().toJson(instance));

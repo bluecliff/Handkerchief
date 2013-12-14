@@ -34,7 +34,7 @@ public class Player {
 		this.color=PlayerStatus.COLOR_GRAY;
 		this.identity=PlayerStatus.IDENTITY_ORDINARY;
 		this.throwing=false;
-		this.id=0;
+		//this.id=0;
 	}
 	
 
