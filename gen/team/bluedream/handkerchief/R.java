@@ -550,45 +550,52 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int logo=0x7f020012;
         public static final int music=0x7f020013;
         public static final int player_name=0x7f020014;
+        public static final int shap_bg=0x7f020015;
     }
     public static final class id {
-        public static final int about_game=0x7f060005;
-        public static final int action_settings=0x7f06001d;
-        public static final int box=0x7f060018;
+        public static final int CustomDlgButtonOK=0x7f06001c;
+        public static final int CustomDlgContentText=0x7f06001b;
+        public static final int CustomDlgContentView=0x7f06001a;
+        public static final int CustomDlgTitle=0x7f060019;
+        public static final int about_game=0x7f060006;
+        public static final int action_settings=0x7f060022;
+        public static final int box=0x7f06001d;
         public static final int create_game=0x7f060003;
-        public static final int finding_server=0x7f060017;
-        public static final int hotLevel=0x7f06001c;
-        public static final int hotName=0x7f06001b;
+        public static final int finding_server=0x7f060018;
+        public static final int hotLevel=0x7f060021;
+        public static final int hotName=0x7f060020;
         public static final int join_game=0x7f060004;
-        public static final int look_back=0x7f06000e;
+        public static final int look_back=0x7f06000f;
         public static final int normal=0x7f060000;
         public static final int pie=0x7f060001;
-        public static final int player_img=0x7f060019;
-        public static final int player_list=0x7f060009;
-        public static final int player_list_client=0x7f060015;
-        public static final int player_name=0x7f06001a;
-        public static final int refresh=0x7f06000d;
-        public static final int server_list=0x7f060014;
-        public static final int start_game=0x7f06000c;
-        public static final int status_bar1=0x7f06000f;
-        public static final int status_bar2=0x7f060011;
-        public static final int status_bar3=0x7f060006;
-        public static final int status_bar_3=0x7f06000a;
-        public static final int status_bar_7=0x7f060016;
-        public static final int status_connect=0x7f060010;
-        public static final int status_game=0x7f060013;
+        public static final int player_img=0x7f06001e;
+        public static final int player_list=0x7f06000a;
+        public static final int player_list_client=0x7f060016;
+        public static final int player_name=0x7f06001f;
+        public static final int refresh=0x7f06000e;
+        public static final int server_list=0x7f060015;
+        public static final int setup_game=0x7f060005;
+        public static final int start_game=0x7f06000d;
+        public static final int status_bar1=0x7f060010;
+        public static final int status_bar2=0x7f060012;
+        public static final int status_bar3=0x7f060007;
+        public static final int status_bar_3=0x7f06000b;
+        public static final int status_bar_7=0x7f060017;
+        public static final int status_connect=0x7f060011;
+        public static final int status_game=0x7f060014;
         public static final int status_text_main=0x7f060002;
-        public static final int status_text_playerlist=0x7f060008;
-        public static final int text1=0x7f060007;
-        public static final int text2=0x7f060012;
-        public static final int throw_handkerchief=0x7f06000b;
+        public static final int status_text_playerlist=0x7f060009;
+        public static final int text1=0x7f060008;
+        public static final int text2=0x7f060013;
+        public static final int throw_handkerchief=0x7f06000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_playerlist=0x7f030001;
         public static final int activity_serverlist=0x7f030002;
-        public static final int player=0x7f030003;
-        public static final int server_layout=0x7f030004;
+        public static final int custom_dialog=0x7f030003;
+        public static final int player=0x7f030004;
+        public static final int server_layout=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -607,6 +614,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int join_game=0x7f090003;
         public static final int look_back=0x7f09000b;
         public static final int refresh=0x7f090006;
+        public static final int setup_game=0x7f09000c;
         public static final int start_game=0x7f090008;
         public static final int throw_handkerchief=0x7f09000a;
     }

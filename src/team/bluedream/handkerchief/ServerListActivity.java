@@ -476,6 +476,9 @@ public class ServerListActivity extends Activity implements
 	}
 
 	private void displayResult() {
+		if(!onStarting){
+			return;
+		}
 		onStarting = false;
 		String winner = "";
 		String loser = "";
@@ -490,8 +493,8 @@ public class ServerListActivity extends Activity implements
 
 		AlertDialog.Builder builder = new Builder(ServerListActivity.this);
 		builder.setTitle("Result");
-		builder.setMessage("Winner：" + winner + "\nLoser:" + loser);
-		builder.setPositiveButton("确认", new OnClickListener() {
+		builder.setMessage("Winner：" + winner + "\nLoser:" + loser+",大家一起惩罚ta吧~~");
+		builder.setPositiveButton("再来一局", new OnClickListener() {
 
 			@Override
 			public void onClick(DialogInterface dialog, int which) {

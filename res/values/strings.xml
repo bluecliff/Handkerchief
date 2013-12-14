@@ -13,5 +13,6 @@
     <string name="game_in">进入游戏</string>
     <string name="throw_handkerchief">扔手绢</string>
     <string name="look_back">回头看</string>
+    <string name="setup_game">设置游戏</string>
 
 </resources>

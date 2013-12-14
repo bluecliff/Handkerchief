@@ -155,7 +155,7 @@ public class PlayerListActivity extends Activity implements
 							}
 						}
 						timeThread.over = true;
-						// sendToClients();
+						sendToClients();
 						displayResult();
 						return;
 					} else {
@@ -355,7 +355,7 @@ public class PlayerListActivity extends Activity implements
 							playerList.get(key).setIdentity(
 									PlayerStatus.IDENTITY_LOSER);
 							timeThread.over = true;
-							// sendToClients();
+							sendToClients();
 							displayResult();
 						}
 
@@ -407,7 +407,7 @@ public class PlayerListActivity extends Activity implements
 		}
 		AlertDialog.Builder builder = new Builder(PlayerListActivity.this);
 		builder.setTitle("Result");
-		builder.setMessage("Winner: " + winner + "\nLoser: " + loser);
+		builder.setMessage("Winner: " + winner + "\nLoser is: " + loser+",大家一起惩罚ta吧~~");
 		builder.setPositiveButton("再来一局", new OnClickListener() {
 
 			@Override
