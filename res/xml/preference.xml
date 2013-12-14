@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <PreferenceCategory android:title="丢手绢游戏设置" 
+       android:icon="@drawable/icon">  
+    <CheckBoxPreference
+        android:icon="@drawable/music"
+        android:defaultValue="true"
+        android:key="onMusic"
+        android:summaryOff="关闭"
+        android:summaryOn="开启"
+        android:title="游戏音效" />
+
+    <EditTextPreference
+        android:icon="@drawable/player_name"
+        android:defaultValue=""
+        android:dialogTitle="游戏名设置"
+        android:key="playerName"
+        android:summary="点击设置您在游戏中的名称"
+        android:title="设置游戏名称" />
+    </PreferenceCategory>
+
+   	<PreferenceCategory >
+   	<ListPreference 
+	    android:key="playerImgId"
+	    android:title="选择头像"
+	    android:icon="@drawable/img1"
+	    android:dialogTitle="选择你的游戏头像"
+	    android:summary="点击选择您在游戏中的图像"
+	    android:defaultValue="1"
+	    android:entries="@array/listNames"
+	    android:entryValues="@array/listValues"/>
+   	</PreferenceCategory>
+</PreferenceScreen>

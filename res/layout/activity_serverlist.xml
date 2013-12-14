@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:id="@+id/status_bar1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/down"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+             
+                android:layout_marginRight="10dp"
+                android:text="@string/finding_server"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/status_bar2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/down"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status_game"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/game_in"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="8.0" >
+
+        <ListView
+            android:id="@+id/server_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <ru.biovamp.widget.CircleLayout
+            android:id="@+id/player_list_client"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:visibility="gone" >
+        </ru.biovamp.widget.CircleLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_bar_7"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0"
+        android:background="@color/black"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/look_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_style_new"
+            android:text="@string/look_back"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/throw_handkerchief"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_style_new"
+            android:text="@string/throw_handkerchief"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/finding_server"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_style_new"
+            android:text="@string/refresh"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+</LinearLayout>
